@@ -13,10 +13,12 @@ namespace lionfox_resyncmodels
             sapi.ChatCommands.Create("resyncmodels")
                 .WithDescription("Force-resend every online player's entity attributes to all tracking clients. Workaround for the PlayerModelLib invisibility race.")
                 .WithAlias("rsm")
+                .RequiresPrivilege(Privilege.controlserver)
                 .HandleWith(args => ResyncAll(sapi, args));
 
             sapi.ChatCommands.Create("resyncmodel")
                 .WithDescription("Force-resend your own entity attributes to all tracking clients.")
+                .RequiresPrivilege(Privilege.chat)
                 .HandleWith(args => ResyncSelf(args));
         }
 
