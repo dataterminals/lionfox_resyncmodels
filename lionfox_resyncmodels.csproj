@@ -24,6 +24,10 @@
       <HintPath>$(VS_PATH)\VintagestoryServer.dll</HintPath>
       <Private>false</Private>
     </Reference>
+    <Reference Include="VintagestoryLib">
+      <HintPath>$(VS_PATH)\VintagestoryLib.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
   </ItemGroup>
 
 </Project>

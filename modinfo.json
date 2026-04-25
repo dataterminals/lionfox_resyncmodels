@@ -2,9 +2,9 @@
     "type": "code",
     "modid": "lionfoxresyncmodels",
     "name": "Resync Player Models",
-    "description": "Adds /resyncmodels — forces all online players' entity attributes to resend to every tracking client. Workaround for the PlayerModelLib invisibility race where a remote player's body doesn't render (only their name tag is visible) until .reconnect.",
+    "description": "Adds /resyncmodels — forces every tracking client to fully respawn online player entities. Workaround for the PlayerModelLib invisibility race where a remote player's body doesn't render (only their name tag is visible) until .reconnect.",
     "authors": [ "lionfox" ],
-    "version": "1.0.1",
+    "version": "1.1.0",
     "side": "Server",
     "dependencies": {
         "game": "1.20.0"
